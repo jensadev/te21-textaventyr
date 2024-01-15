@@ -13,6 +13,12 @@ router.get('/story', function (req, res) {
   res.render('part.njk', { title: part.name, part: part })
 })
 
+router.post('/username', function (req, res) {
+  req.session.username = req.body.username
+  console.log(req.session.username)
+  res.redirect('/story')
+})
+
 router.get('/story/:id', function (req, res) {
   console.log(req.params.id)
   const part = story.parts.find((part) => part.id === parseInt(req.params.id))
