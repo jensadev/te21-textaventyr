@@ -5,7 +5,9 @@
   <div>
     <div class="hero">
       <h1>{{part.name}}</h1>
+      {% if part.image %}
       <img src="/img/{{part.image}}" alt="{{part.name}}">
+      {% endif %}
     </div>
     <p>{{part.text}}</p>
     <ul>

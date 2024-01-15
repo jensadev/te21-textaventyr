@@ -2,48 +2,106 @@
   "parts": [
     {
       "id": 0,
-      "name": "Your journey begins",
+      "name": "Start",
       "image": "step-0.jpg",
       "text": "As you step through the mystical portal, the air crackles with magic, and you find yourself standing in a breathtaking landscape of Eldoria. The sky is painted with hues unknown to your world, and fantastical creatures roam in the distance. Before you stretches a path leading to the heart of the realm. As you begin your journey, an ancient figure appears before you. 'Greetings, traveler! In Eldoria, you'll face challenges beyond your wildest imagination. But fear not, for you may choose a weapon to aid you on your quest.'",
       "options": [
         {
+          "id": 1,
           "text": "Select the Enchanted Sword",
-          "path": "select_sword",
           "target": 1
         },
         {
+          "id": 2,
           "text": "Choose the Elemental Staff",
-          "path": "select_staff",
           "target": 2
         },
         {
+          "id": 3,
           "text": "Opt for the Arcane Bow",
-          "path": "select_bow",
           "target": 3
         }
       ]
     },
     {
       "id": 1,
-      "name": "Part 2",
-      "text": "This is part 2",
+      "name": "Select Sword",
+      "text": "You choose the Enchanted Sword, its blade shimmering with otherworldly energy. The ancient figure nods approvingly. 'A wise choice, adventurer! Now, with your trusty sword in hand, which path will you take through Eldoria?'",
       "options": [
         {
-          "id": 2,
-          "text": "Go back to start",
-          "target": 0
+          "id": 4,
+          "text": "Embark on the Forest Trail",
+          "target": 4
+        },
+        {
+          "id": 5,
+          "text": "Navigate the Ruins Entrance",
+          "target": "ruins_entrance_sword"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Part 3",
-      "text": "This is part 3",
+      "name": "Select Staff",
+      "text": "You opt for the Elemental Staff, a conduit to the magical energies of Eldoria. The ancient figure smiles. 'A wielder of the arcane! With your staff, you hold the very essence of this realm. Now, which path will you tread with your Elemental Staff?'",
       "options": [
         {
-          "id": 4,
-          "text": "Go back to part 2",
-          "target": 1
+          "id": 6,
+          "text": "Explore the Enchanted Forest",
+          "target": "enchanted_forest_staff"
+        },
+        {
+          "id": 7,
+          "text": "Enter the Mystic Caverns",
+          "target": "mystic_caverns_staff"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Select Bow",
+      "text": "You decide on the Arcane Bow, its arrows imbued with mystical energy. The ancient figure nods in approval. 'A skilled archer! With your Arcane Bow, you'll strike down foes from a distance. Now, which path will your arrows guide you through?'",
+      "options": [
+        {
+          "id": 8,
+          "text": "Venture into the Whispering Woods",
+          "target": "whispering_woods_bow"
+        },
+        {
+          "id": 9,
+          "text": "Descend into the Shadowed Abyss",
+          "target": "shadowed_abyss_bow"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Forest Trail with Sword",
+      "image": "step-4.jpg",
+      "text": "You traverse the Forest Trail with your Enchanted Sword at the ready. The ancient trees whisper secrets, and mystical creatures observe your every move. As you delve deeper, you encounter a crossroads. Which path will you choose?",
+      "options": [
+        {
+          "id": 10,
+          "text": "Follow the Bioluminescent Butterflies",
+          "target": 15
+        },
+        {
+          "id": 11,
+          "text": "Take the Moonlit Path",
+          "target": "moonlit_path"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Bioluminescent Butterflies",
+      "image": "step-15.jpg",
+      "text": "You follow the Bioluminescent Butterflies, their wings glowing with magical light. The ancient trees whisper secrets, and mystical creatures observe your every move. As you delve deeper, you stumble and fall. You look up to see a floating skull, its eyes glowing with an eerie light. It cackles and attacks!",
+      "options": [
+        {
+          "id": 12,
+          "text": "Restart",
+          "target": 0
         }
       ]
     }
