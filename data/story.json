@@ -2,7 +2,7 @@
   "parts": [
     {
       "id": 0,
-      "name": "Start",
+      "name": "Welcome [PLAYER] to Eldoria",
       "image": "step-0.jpg",
       "text": "As you step through the mystical portal, the air crackles with magic, and you find yourself standing in a breathtaking landscape of Eldoria. The sky is painted with hues unknown to your world, and fantastical creatures roam in the distance. Before you stretches a path leading to the heart of the realm. As you begin your journey, an ancient figure appears before you. 'Greetings, traveler! In Eldoria, you'll face challenges beyond your wildest imagination. But fear not, for you may choose a weapon to aid you on your quest.'",
       "options": [

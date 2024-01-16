@@ -23,7 +23,7 @@ app.use(
     secret: 'JSuTn1qvmGbGNBp2LcRDQvoUIe432vw/nWrlpao1ABk=',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: true },
+    cookie: { sameSite: true },
   })
 )
 
