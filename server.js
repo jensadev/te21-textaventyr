@@ -1,9 +1,11 @@
+require('dotenv').config()
 const express = require('express')
 const nunjucks = require('nunjucks')
 const bodyParser = require('body-parser')
 const session = require('express-session')
 
 const indexRouter = require('./routes/index')
+const storyRouter = require('./routes/story')
 
 const port = process.env.PORT || 3000
 
@@ -33,6 +35,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/', indexRouter)
+app.use('/s', storyRouter)
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
