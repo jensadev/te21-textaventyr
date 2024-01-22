@@ -2,7 +2,10 @@
   "name": "te21-textaventyr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./server.js"
+  },
   "scripts": {
     "dev": "nodemon -e js,html,njk,json ./server.js"
   },

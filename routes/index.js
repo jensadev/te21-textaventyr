@@ -1,7 +1,11 @@
-const express = require('express')
-const router = express.Router()
+// const express = require('express')
+// const router = express.Router()
 
-const story = require('../data/story.json')
+// const story = require('../data/story.json')
+
+import express from 'express'
+const router = express.Router()
+import story from '../data/story.json' assert { type: 'json' }
 
 router.get('/', function (req, res) {
   console.log(story.parts[0])
@@ -39,4 +43,5 @@ router.get('/story/:id', function (req, res) {
   res.render('part.njk', { title: name, part: part })
 })
 
-module.exports = router
+// module.exports = router
+export default router
