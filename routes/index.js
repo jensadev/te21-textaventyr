@@ -39,4 +39,16 @@ router.get('/story/:id', function (req, res) {
   res.render('part.njk', { title: name, part: part })
 })
 
+const pool = require('../db')
+
+router.get('/dbtest', async (req, res) => {
+  try {
+    const [parts] = await pool.promise().query('SELECT * FROM jens_part')
+    res.json({ parts })
+  } catch (error) {
+    console.log(error)
+    res.sendStatus(500)
+  }
+})
+
 module.exports = router
